@@ -31,5 +31,7 @@ namespace MvcMovie.Models
         [StringLength(5)]
         [Required]
         public string Rating { get; set; }
+        [Range(0,10)]
+        public int Score { get; set; }
     }
 }
